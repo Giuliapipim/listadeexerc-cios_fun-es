@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function compararNumeros() {
+        let num = prompt(parseFloat("Digite o primeiro número:"));
+        let num2 = prompt(parseFloat("Digite o segundo número:"));
+
+        if (!isNaN(numero1) && !isNaN(numero2)) {
+            if (num >= num2) {
+                return "O primeiro número (" + numero1 + ") é maior ou igual ao segundo número (" + numero2 + ").<br>";
+            } else {
+                return "O primeiro número (" + numero1 + ") é menor que o segundo número (" + numero2 + ").<br>";
+            }
+        } else {
+            return "Por favor, digite números válidos.<br>";
+        }
+    }
+
+    document.write(compararNumeros());
+
+  </script>
+</body>
+</html>
