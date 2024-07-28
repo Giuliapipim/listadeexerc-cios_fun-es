@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
   <script>
-    function teste() {
-        let num = prompt(parseFloat("Digite o primeiro número:"));
-        let num2 = prompt(parseFloat("Digite o segundo número:"));
+      function maiorMenor() {
+          let num = parseFloat(prompt("DIGITE UM NÚMERO: "));
+          let num2 = parseFloat(prompt("DIGITE OUTRO NÚMERO: "));
 
-        if (!isNaN(num) && !isNaN(num2)) {
-            if (num >= num2) {
-                return (num + "é maior ou igual a " + num2);
-            }
-        }
-            
-            else {
-                return (num + " é menor que " + num2 + );
-            }
-          
-            else {
-            return ("Por favor, digite números inteiros de 1 a 12");
-        }
-    }
+          if (!isNaN(num) && !isNaN(num2)) {
+        
+      if (num >= num2) {
+          return num + " É MAIOR OU IGUAL A " + num2;
+      }
+      
+      else {
+          return num + " É MENOR QUE " + num2;
+      }
+              } else {
+                  return "POR FAVOR, DIGITE NÚMEROS VÁLIDOS";
+                }
+              }
 
-    document.write(teste());
+        let result = maiorMenor();
+      document.write(result);
 
   </script>
 </body>
+
 </html>
