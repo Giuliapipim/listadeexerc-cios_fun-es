@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script>
+      function medias() {
+
+          let ratos = parseInt(prompt("Quantos números você quer informar?"));
+          let nums = [];
+
+          for (let i = 0; i < ratos; i++) {
+              let num = parseFloat(prompt("DIGITE UM NÚMERO: " + (i + 1) ));
+              nums.push(num);
+          }
+
+          let soma = 0;
+          for (let i = 0; i < nums.length; i++) {
+              soma += nums[i];
+          }
+
+          let media = soma / nums.length;
+
+          return media;
+      }
+
+      let media = medias();
+      let ratas = media.toString().toUpperCase();
+
+      document.write("A MÉDIA É:  " + ratas);
+
+
+  </script>
+</body>
+
+</html>
